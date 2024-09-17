@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .before-content-none::before{
+    content: "";
+  }
+}
+
+
+.glowable-text {
+  color: black;
+}
+
+[glow] .glowable-text {
+  color: var(--glow-color);
+}
